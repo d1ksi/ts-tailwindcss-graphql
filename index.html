@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>TODO</title>
+</head>
+
+<body>
+   <div id="god" class="bg-gray-400 min-h-screen">
+      <header
+         class="h-24 flex justify-center items-center font-mono text-[42px] text-sky-800 tracking-[.5em] font-semibold">
+         To-Do List
+      </header>
+      <main class="flex items-center flex-col">
+         <section class="flex">
+            <div class="flex mr-9">
+               <input id="addTask" type="text"
+                  class="border border-slate-300 rounded-l-2xl focus:outline-none w-80 h-11 pl-2.5"
+                  placeholder="Add To-do">
+               <div id="addBtn"
+                  class="cursor-pointer text-gray-300 ml-3.5 rounded-r-2xl bg-sky-800 px-2.5 flex justify-center items-center font-mono max-h-80">
+                  Add
+               </div>
+            </div>
+            <div class="flex">
+               <input id="searchTask" type="text"
+                  class="border border-slate-300 focus:outline-none w-80 h-11 rounded-l-2xl pl-2.5"
+                  placeholder="Search To-do">
+               <div id="searchBtn"
+                  class="cursor-pointer text-gray-300 ml-3.5 rounded-r-2xl bg-sky-800 px-2.5 flex justify-center items-center font-mono max-h-80">
+                  Search</div>
+            </div>
+         </section>
+         <section id="allToDo" class="mt-3"></section>
+      </main>
+   </div>
+   <script src="/src/app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
